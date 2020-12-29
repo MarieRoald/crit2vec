@@ -44,6 +44,7 @@ NEIGHBOUR_OPTIONS, DIM_OPTIONS, DATA, WORDS = load_data()
 MODEL = "full-model"
 NLPs = {model: spacy.load(f"data/models/crit2vec_{model}") for model in ['full-model']}#, 'vox-machina', 'mighty-nein']}
 app = dash.Dash(external_stylesheets=[dbc.themes.LITERA, "https://use.typekit.net/ezg3tjx.css"])
+app.title = "Crit2Vec"
 PLOT_COLOR1 = "#3e4450"
 PLOT_COLOR2 = "#f9c28c"
 PLOT_COLOR3 = "#ddd4c6"
@@ -65,7 +66,8 @@ TEMPLATE = {
 info = dbc.Card(
     [html.H1([html.Span("Crit"), html.Span("Y", className="two"), html.Span("Vec")]),
     dcc.Markdown("""\
-        Exploring [Word2Vec](https://en.wikipedia.org/wiki/Word2vec) embeddings of the Critical Role transcripts.
+        Explore [Word2Vec](https://en.wikipedia.org/wiki/Word2vec) embeddings of
+        the [Critical Role transcripts](https://crtranscript.tumblr.com/transcripts).
         """)], body=True, className="title-card"
 )
 
@@ -196,7 +198,7 @@ app.layout = dbc.Container(
                     dbc.Card([
                         html.H4("What is this?"),
                         dcc.Markdown(
-                            """This is a dashboard to visualise *word embeddings* of the critical role transcript.
+                            """This is a dashboard to visualise *word embeddings* of the Critical Role transcript.
                             Word embeddings is a technique to represent words as a list of numbers (in this case 100), so we perform mathematical operations with them. To the left, you add and subtract words.
                             In the scatterplot above, we use a technique called [UMAP](https://umap-learn.readthedocs.io/en/latest/) to visualise how words are distributed in relation to one another.
                             Words that are close together are similar, but we cannot say anything about words that are far apart, they may still be similar.
