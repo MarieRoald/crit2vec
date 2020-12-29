@@ -1,4 +1,4 @@
-#!bash
+# -*- coding: utf-8 -*-
 
 import json
 from itertools import product
@@ -43,7 +43,7 @@ def load_data():
 NEIGHBOUR_OPTIONS, DIM_OPTIONS, DATA, WORDS = load_data()
 MODEL = "full-model"
 NLPs = {model: spacy.load(f"data/models/crit2vec_{model}") for model in ['full-model']}#, 'vox-machina', 'mighty-nein']}
-app = dash.Dash(external_stylesheets=[dbc.themes.LITERA, "https://use.typekit.net/ezg3tjx.css"])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LITERA, "https://use.typekit.net/ezg3tjx.css"])
 server = app.server
 app.title = "Crit2Vec"
 PLOT_COLOR1 = "#3e4450"
