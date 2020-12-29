@@ -44,6 +44,7 @@ NEIGHBOUR_OPTIONS, DIM_OPTIONS, DATA, WORDS = load_data()
 MODEL = "full-model"
 NLPs = {model: spacy.load(f"data/models/crit2vec_{model}") for model in ['full-model']}#, 'vox-machina', 'mighty-nein']}
 app = dash.Dash(external_stylesheets=[dbc.themes.LITERA, "https://use.typekit.net/ezg3tjx.css"])
+server = app.server
 app.title = "Crit2Vec"
 PLOT_COLOR1 = "#3e4450"
 PLOT_COLOR2 = "#f9c28c"
