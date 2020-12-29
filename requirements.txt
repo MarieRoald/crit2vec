@@ -6,3 +6,4 @@ pandas
 umap-learn
 tqdm
 gensim
+gunicorn
