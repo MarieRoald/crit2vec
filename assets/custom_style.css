@@ -1,0 +1,122 @@
+body {
+    background-color: #f4f1ea;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("rice-paper-3.png");
+}
+
+a:hover {
+    color: #402011;
+    background-color: #ddd4c6;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: None;
+    background-color: transparent;
+    color: #402011;
+    border-bottom: 5px solid #ddd4c6;
+    font-style: italic;
+}
+
+*:not(h1 span):not(h4):not(h5){
+    
+    font-family: futura-pt, sans-serif;
+
+}
+
+p,
+body {
+    font-family: futura-pt, serif;
+    font-weight: 400;
+    color: #402011;
+}
+
+.card {
+    background: none;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 2px;
+    border-radius: 0px;
+    border-color:rgba(64, 32, 17, 0.7);
+}
+
+.card-deck {
+    margin-top: 20px;
+}
+
+.Select-control {
+    background-color: transparent;
+}
+
+
+.title-card h1 {
+    font-family: 'brothers', sans-serif;
+    font-style: normal;
+    font-size: 43pt;
+    /*font-weight: 400;*/
+}
+
+.Select--multi .Select-value {
+    color: #c6986f;
+    border-color: rgba(249, 194, 140, 1);
+    background-color: rgba(249, 194, 140, 0.25);
+}
+
+.Select--multi .Select-value-icon {
+    border-color: rgba(249, 194, 140, 1);
+    ;
+}
+
+.rc-slider-track,
+.rc-slider-dot-active {
+    background-color: rgba(249, 194, 140, 1);
+}
+
+.rc-slider-dot.rc-slider-dot-active, .rc-slider-handle {
+    border-color: rgba(249, 194, 140, 1);
+    background-color: rgba(249, 194, 140, 1);
+}
+
+.rc-slider-dot {
+    border-color: #3e4450;
+    background-color: #3e4450;
+}
+
+.rc-slider-rail {
+    background-color:rgba(62, 68, 80, 0.5)
+}
+
+
+h1 span.two {
+    font-family: "brothers-word-logos", sans-serif;
+}
+
+.card h4, .card h5 {
+    font-family: 'Brothers', sans-serif;
+    font-style: normal;
+    font-variant: titling-caps;
+}
+.card h5{
+    font-style: italic;
+    color: rgba(64, 32, 17, 0.7);
+}
+
+.card h4:first-letter {
+    text-transform: capitalize
+}
+
+.card h4,
+h1 {
+    letter-spacing: 1px;
+
+}
+
+.card h1 span.two {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modebar{
+    display: none !important;
+}

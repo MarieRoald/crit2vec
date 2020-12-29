@@ -1,0 +1,8 @@
+dash
+dash-bootstrap-components
+spacy
+numpy
+pandas
+umap-learn
+tqdm
+gensim
