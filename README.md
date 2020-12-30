@@ -17,4 +17,4 @@ The second task we set about to solve was *word arithmetic*. For example, if we 
 
 So, to compute "word sums", we looked up the vectors associated with all words in the sum. Then, we normalised them to have unit length, before we computed the arithmetic expression. Then, we used the cosine similarity between the resulting vector and all word vectors in the CR transcript (except those included in our arithmetic expression, since those are bound to be similar to this sum) to find the word most similar to the sum. 
 
-The last step was to create a web app to display our findings. We made the app with [Plotly Dash](https://plotly.com/dash/) combined with [Plotly Express](https://plotly.com/python/plotly-express/) and deployed in with [Heroku](https://heroku.com). You can see this app [here](crit2vec.herokuapp.com).
+The last step was to create a web app to display our findings. We made the app with [Plotly Dash](https://plotly.com/dash/) combined with [Plotly Express](https://plotly.com/python/plotly-express/) and deployed in with [Heroku](https://heroku.com). You can see this app [here](https://crit2vec.herokuapp.com).
