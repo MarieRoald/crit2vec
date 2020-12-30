@@ -202,7 +202,7 @@ app.layout = dbc.Container(
                             """This is a dashboard to visualise *word embeddings* of the Critical Role transcript.
                             Word embeddings is a technique to represent words as a list of numbers (in this case 100), so we perform mathematical operations with them. To the left, you add and subtract words.
                             In the scatterplot above, we use a technique called [UMAP](https://umap-learn.readthedocs.io/en/latest/) to visualise how words are distributed in relation to one another.
-                            Words that are close together are similar, but we cannot say anything about words that are far apart, they may still be similar.
+                            Words that are close together are similar, but we cannot say anything about words that are far apart, they may still be similar. For more information, see the [readme on GitHub](https://github.com/marieroald/crit2vec).
                             """
                         )
                     ], body=True), md=3)
