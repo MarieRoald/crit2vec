@@ -1,5 +1,4 @@
-# Crit2Vec
-## Visualising the Critical Role transcript with Word2Vec
+# Crit2Vec — Visualising the Critical Role transcript with Word2Vec
 **[Web app](https://crit2vec.herokuapp.com)**
 
 Lately, we have taken an interest in natural language processing (NLP). One technique that has gathered much traction the past years is *[Word2Vec](http://jalammar.github.io/illustrated-word2vec/)* (or a similar algorithm like *GLoVe*). These algorithms try to find vector representations of words that are predictive of their neighbouring words. We can then, either, analyse these vector representations directly, understand how words are used in a text, or use them as input for another machine learning algorithm. 
