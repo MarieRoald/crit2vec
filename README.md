@@ -1,6 +1,8 @@
 # Crit2Vec — Visualising the Critical Role transcript with Word2Vec
 **[Web app](https://crit2vec.herokuapp.com)**
 
+<img src="screenshot.png" height="400px">
+
 Lately, we have taken an interest in natural language processing (NLP). One technique that has gathered much traction the past years is *[Word2Vec](http://jalammar.github.io/illustrated-word2vec/)* (or a similar algorithm like *GLoVe*). These algorithms try to find vector representations of words that are predictive of their neighbouring words. We can then, either, analyse these vector representations directly, understand how words are used in a text, or use them as input for another machine learning algorithm. 
 
 In this project, we opted for the first option: To analyse the word vectors directly. We did this in two ways, first by inspecting the word vectors themselves, and then seeing what we get when we add and subtract word vectors from each other. The first step, however, was to train a Word2Vec model. To do this, we needed two things: a large collection of text, and a tool to train the model. We have recently watched a lot of Critical Role, a Dungeons & Dragons stream running for over 200 episodes, each lasting 3-5 hours. The transcript for the first 159 episodes + bonus content is [available online](https://crtranscript.tumblr.com/transcripts). We thought this was a good choice, because of the large dataset, and that it could be interesting to see how the model performs on Dungeons and Dragons-language.
