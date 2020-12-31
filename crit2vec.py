@@ -51,7 +51,7 @@ def word_arithmetic(nlp, positive=None, negative=None, use_norm=True):
 
 
 def find_nearest(nlp, positive=None, negative=None, n_vectors=5, use_norm=True,):
-    """Find the `n_vectors` nearest word to an arithmetic expression, disregarding all words in the expression.
+    """Find the `n_vectors` words most similar to an arithmetic expression, disregarding all words in the expression.
     """
     if positive is None:
         positive = []
